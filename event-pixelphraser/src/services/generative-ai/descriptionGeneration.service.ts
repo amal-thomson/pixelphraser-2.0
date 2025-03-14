@@ -25,6 +25,7 @@
 //         7. Incorporate natural SEO-friendly language without keyword stuffing.
 //         8. Ensure readability with concise yet engaging language.
 //         9. Include a persuasive call to action (e.g., "Order now to experience quality and style").
+//         10. Keep the description under 150 words.
 
 //         **Key Features Section**:
 //         - Summarize the most important attributes concisely.
@@ -76,6 +77,7 @@ export async function generateProductDescription(imageData: ImageData, productNa
                 7. Include sizing or fit information.
                 8. Ensure the description is SEO-optimized with natural keyword usage.
                 9. Avoid keyword stuffing.
+                10. Keep the description under 150 words.
 
                 Key Features Section:
                 - Summarize fabric, fit, and versatility.
@@ -103,6 +105,7 @@ export async function generateProductDescription(imageData: ImageData, productNa
                 6. Mention comfort, practicality, and maintenance tips.
                 7. Optimize for SEO with relevant keywords and natural readability.
                 8. Avoid keyword stuffing.
+                9. Keep the description under 150 words.
 
                 Key Features Section:
                 - Summarize materials, design, and functionality.
@@ -130,6 +133,7 @@ export async function generateProductDescription(imageData: ImageData, productNa
                 6. Suggest ideal reading situations (e.g., casual reading, study material).
                 7. Include SEO-friendly language while maintaining natural readability.
                 8. Avoid keyword stuffing.
+                9. Keep the description under 150 words.
 
                 Key Features Section:
                 - Summarize genre, themes, and appeal.
