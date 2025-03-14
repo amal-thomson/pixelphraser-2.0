@@ -6,7 +6,6 @@ export async function updateCustomObjectWithDescription(
     productName: string,
     imageUrl: string,
     translations: {
-        en: string;
         "en-US": string;
         "en-GB": string;
         "de-DE": string;
@@ -39,10 +38,9 @@ export async function updateCustomObjectWithDescription(
                 key: productId,
                 version: currentVersion, 
                 value: {
-                    temporaryDescription_en: translations.en,
-                    temporaryDescription_en_US: translations["en-US"],
-                    temporaryDescription_en_GB: translations["en-GB"],
-                    temporaryDescription_de_DE: translations["de-DE"],
+                    usDescription: translations["en-US"],
+                    gbDescription: translations["en-GB"],
+                    deDescription: translations["de-DE"],
                     imageUrl: imageUrl,
                     productType: productType,
                     productName: productName,

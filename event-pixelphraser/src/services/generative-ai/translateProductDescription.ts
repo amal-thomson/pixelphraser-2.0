@@ -4,7 +4,7 @@ import { model } from '../../config/ai.config';
 export async function translateProductDescription(generatedDescription: string): Promise<Record<string, string>> {
     try {
         const translations: Record<string, string> = {};
-        const locales = ['en', 'en-GB', 'en-US', 'de-DE'];
+        const locales = ['en-GB', 'en-US', 'de-DE'];
 
         for (const locale of locales) {
             const prompt = `You are a professional translator. Translate the following product description into ${locale}. 

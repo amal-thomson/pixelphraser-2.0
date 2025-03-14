@@ -78,8 +78,7 @@ export const post = async (request: Request, response: Response) => {
             await createProductCustomObject(productId, imageUrl, productName, productTypeKey);
 
             logger.info('✅ Updating custom object with generated description.');
-            const translationsTyped: { en: string; "en-US": string; "en-GB": string; "de-DE": string } = translations as {
-                en: string;
+            const translationsTyped: { "en-US": string; "en-GB": string; "de-DE": string } = translations as {
                 "en-US": string;
                 "en-GB": string;
                 "de-DE": string;
