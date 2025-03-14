@@ -54,34 +54,6 @@ export async function generateProductDescription(imageData: ImageData, productNa
 
         switch (productTypeKey) {
 
-            case 'apparel':
-                prompt = `You are a professional e-commerce product copywriter. Write a compelling, SEO-optimized product description for an apparel item based on the following image analysis:
-
-                Product Name: ${productName}
-
-                Image Analysis Data:
-                - Labels: ${imageData.labels}
-                - Objects detected: ${imageData.objects}
-                - Dominant colors: ${imageData.colors.join(', ')}
-                - Text detected: ${imageData.detectedText}
-                - Web entities: ${imageData.webEntities}
-
-                Description Guidelines:
-                1. Use details from the product name to enhance the description.
-                2. Specify the target category (e.g., men's, women's, kids').
-                3. Highlight key features such as style, fit, and comfort.
-                4. Describe the fabric’s feel confidently.
-                5. Suggest occasions for wearing the item.
-                6. Mention styling options and care instructions.
-                7. Include sizing or fit information.
-                8. Ensure the description is SEO-optimized with natural keyword usage.
-                9. Avoid keyword stuffing.
-
-                Key Features Section:
-                - Summarize fabric, fit, and versatility.
-                - Use engaging, keyword-rich language.`;
-                break;
-
             case 'clothing':
                 prompt = `You are a professional e-commerce product copywriter. Write a compelling, SEO-optimized product description for an apparel item based on the following image analysis:
 
